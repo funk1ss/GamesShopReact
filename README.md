@@ -1,7 +1,17 @@
-###1. `git clone https://github.com/funk1ss/GamesShopReact.git`
+Для запуска пишем следующее в терминал
 
-###2. `cd .\GamesShopReact\`
+Клонируем проект
 
-###3. `npm install`
+1. `git clone https://github.com/funk1ss/GamesShopReact.git`
 
-###4. `npm start`
+Переходим в корневую папку проекта
+
+2. `cd .\GamesShopReact\`
+
+Устанавливаем модули
+
+3. `npm install`
+
+Запускаем сервер
+
+4. `npm start`
