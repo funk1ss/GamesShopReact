@@ -1,0 +1,33 @@
+.search-svg{
+    width: 25px;
+    position: absolute;
+    right: 2px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+.hat-background{
+    background: black;
+}
+.hat{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.basket svg{
+    width: 35px;
+}
+.search-block{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+input{
+    padding: 7px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+input::selection{
+    transform: translate(1px);
+}
