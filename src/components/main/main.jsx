@@ -1,13 +1,18 @@
 import Hat from "../hat/Hat";
 import Cardscontainer from "../cardscontainer/Cardscontainer";
-
+import React, { useState } from 'react';
 
 function Main({GamesList}) {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = (value) => {
+    setInputValue(value);
+  };
+  
   return (
     <div className="Main">
-    
-      <Hat></Hat>
-      <Cardscontainer GamesList={GamesList}></Cardscontainer>
+      <Hat onInputChange={handleInputChange} GamesList={GamesList}></Hat>
+      <Cardscontainer GamesList={GamesList} InputValue={inputValue}></Cardscontainer>
     </div>
     
   );

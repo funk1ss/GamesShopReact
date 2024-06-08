@@ -36,6 +36,15 @@ const GamesList = [
     description: "",
     price: "10$",
   },
+  {
+    id: "4",
+    img: "./doom.jpg",
+    year: "2010",
+    title: "Far Cry 3",
+    description: "",
+    price: "10$",
+  },
+  
 ]
 
 function App() {
