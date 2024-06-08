@@ -6,7 +6,7 @@
     background-color: #302e3e;
     border-radius: 10px;
     box-shadow: 0px 0px 14px 1px orange;
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 1s;
     margin-bottom: 50px;
 }
 .card-buy{
@@ -42,6 +42,9 @@ button{
 .price{
     margin-top  : 10px;
 }
+
+
+
 
 @keyframes fadeInAnimation {
     0% {

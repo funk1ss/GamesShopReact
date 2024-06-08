@@ -8,6 +8,6 @@
 
 .cards-container{
     display: grid;
-    grid-template-columns: 300px 300px 300px; /* Автоматический размер для средней колонки */
+    grid-template-columns: 300px 300px 300px; 
     column-gap: 250px;
 }

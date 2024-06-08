@@ -8,7 +8,8 @@ function Cardscontainer ({GamesList}){
                 <div className="main">
                     <div className="cards-container">
                         {GamesList.map(item =>(
-                            <Card 
+                            <Card
+                                id={item.id}
                                 img={item.img}
                                 title={item.title}
                                 price={item.price}
