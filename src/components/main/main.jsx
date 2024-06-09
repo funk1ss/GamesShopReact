@@ -11,7 +11,7 @@ function Main({GamesList}) {
   
   return (
     <div className="Main">
-      <Hat onInputChange={handleInputChange} GamesList={GamesList}></Hat>
+      <Hat onInputChange={handleInputChange} ></Hat>
       <Cardscontainer GamesList={GamesList} InputValue={inputValue}></Cardscontainer>
     </div>
     
