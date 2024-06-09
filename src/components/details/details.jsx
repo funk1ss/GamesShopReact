@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './details.css';
 import Swal from 'sweetalert2';
-
+import { Link } from 'react-router-dom';
 function Details({ GamesList }) {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
@@ -24,21 +24,32 @@ function Details({ GamesList }) {
         <div className="container">
           <div className="details">
 
-            <div className="left-block">
-              <img src={game.img} alt="" width={400} />
-
+            <div className="details-hat">
+              <div className="back-home">
+                <Link to='/'><h2>Главная</h2></Link>
+              </div>
               <h2>{game.title}</h2>
+            </div>
+            <hr />
+            <div className="details-main">
+              <div className="left-block">
+                <img src={game.img} alt="" width={400} />
 
-              <p>Год выпуска: {game.year}</p>
+                <h2>{game.title}</h2>
 
-              <p>Цена: {game.price}</p>
+                <p>Год выпуска: {game.year}</p>
 
-              <button onClick={BuyAllert}>Оформить покупку</button> 
+                <p>Цена: {game.price}</p>
+
+                <button onClick={BuyAllert}>Оформить покупку</button> 
+              </div>
+
+              <div className="right-block">
+                <h2>Описание игры: </h2>
+                <p>{game.description}</p>
+              </div>
             </div>
 
-            <div className="right-block">
-              <p>{game.description}</p>
-            </div>
 
           </div>
         </div>

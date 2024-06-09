@@ -2,10 +2,16 @@
     background: black;
     height: 100vh;
 }
-.details{
+.details-hat{
     display: flex;
     justify-content: space-between;
-    padding-top: 100px;
+    padding: 20px 0px;
+    animation: fadeInAnimation ease 1s;
+}
+.details-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
     animation: fadeInAnimation ease 1s;
 }
 .left-block{
@@ -23,4 +29,8 @@
 }
 .right-block{
     width: 70%;
+}
+.right-block h2{
+    margin: 0px;
+    margin-bottom: 20px;
 }
