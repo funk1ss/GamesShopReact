@@ -4,9 +4,9 @@ function Hat ({onInputChange}){
 
 
 
-    const handleChange = (event) => {
+    function handleChange(event){
         onInputChange(event.target.value);
-      };
+    };
 
     
     return(

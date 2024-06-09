@@ -5,13 +5,13 @@ import React, { useState } from 'react';
 function Main({GamesList}) {
   const [inputValue, setInputValue] = useState('');
 
-  const handleInputChange = (value) => {
+  function handleInputChange(value) {
     setInputValue(value);
   };
   
   return (
     <div className="Main">
-      <Hat onInputChange={handleInputChange} GamesList={GamesList}></Hat>
+      <Hat onInputChange={handleInputChange}></Hat>
       <Cardscontainer GamesList={GamesList} InputValue={inputValue}></Cardscontainer>
     </div>
     

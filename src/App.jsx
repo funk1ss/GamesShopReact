@@ -21,6 +21,7 @@ const GamesList = [
     price: "12$",
   },
   
+  
 ]
 
 function App() {
