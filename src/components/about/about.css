@@ -2,3 +2,73 @@
     background: black;
     height: 100vh;
 }
+.about-hat{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    animation: fadeInAnimation ease 1s;
+}
+.about-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+.about-contacts{
+    display: flex;
+    justify-content: space-between;
+}
+.about-info{
+    animation: fadeInAnimation ease 1s;
+}
+.about-info h1,h2{
+    margin: 20px 0px;
+}
+.about-info ul{
+    list-style: none;
+}
+.about-info ul li{
+    margin-top: 10px;
+}
+.about-info p{
+    margin-top: 20px;
+}
+.about-contacts{
+    margin-top: 100px;
+}
+.phone svg{
+    width: 20px;
+    cursor: pointer;
+}
+.about-contacts{
+    animation: slide-right 0.5s forwards;
+}
+.about-contacts div{
+    margin-right: 20px;
+}
+.phone{
+    display: flex;
+    align-items: center;
+
+}
+.phone div{
+    margin: 0px 5px;
+}
+.twitter img{
+    width: 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
